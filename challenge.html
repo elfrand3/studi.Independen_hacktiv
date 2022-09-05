@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>el_codee</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PRODUCT</a></li>
+            <li><a href="#">GALLERY</a></li>
+            <li><a href="#">BILOG</a></li>
+            <li><a href="#">INVENTORY</a></li>
+        </ul>
+    </nav>
+    <!-- user -->
+    <div class="content">
+        <marquee >SELAMAT DATANG PARA MAHASISWA DEVELPMENT HACKTIV</marquee>
+        <div class="user">
+            <img src="frand.jpeg" alt="user">
+            <!-- left -->
+            <div class="left">
+                <h3 id="nm"><b>el codee</b></h3>
+                <p id="rl">Fullstact Development</p>
+                <button class="contact">Edit</button>
+                <button class="Resume">Resume</button>
+            </div>
+            <!-- right -->
+            <div class="center">
+                <p>Availabelity </p>
+                <p>Usia </p>
+                <p>Lokasi </p>
+                <p>Pengalaman </p>
+                <p>Email </p>        
+            </div>
+            <div class="right">
+                <p id="a">: 30 menit</p>
+                <p id="u">: 21 Tahun</p>
+                <p id="l">: Probolinggo</p>
+                <p id="p">: 1 Tahun</p>
+                <p id="e">: elfrand3@gmail.com </p>        
+            </div>
+        </div>
+            <form onsubmit="submitForm()">
+                <label for="name"><b>Name :</b></label>
+                <input type="text" id="name" name="fname"><br><br>
+                <label for="role"><b>Role :</b></label>
+                <input type="text" id="role" name="role"><br><br>
+                <label for="availabelity"><b>Availabelity :</b></label>
+                <input type="text" id="availabelity" name="availabelity"><br><br>
+                <label for="usia"><b>Usia :</b></label>
+                <input type="text" id="usia" name="usia"><br><br>
+                <label for="lokasi"><b>Lokasi :</b></label>
+                <input type="text" id="lokasi" name="lokasi"><br><br>
+                <label for="pengalaman"><b>Pengalaman :</b></label>
+                <input type="text" id="pengalaman" name="pengalaman"><br><br>
+                <label for="email"><b>Email :</b></label>
+                <input type="text" id="email" name="email"><br><br>
+                <input type="submit" class="submit" value="submit">
+            </form>
+        </div>
+    <script>
+        function submitForm() {
+            event.preventDefault();
+
+            const inputName = document.getElementById("name").value;
+            document.getElementById("nm").innerText = inputName;
+
+            const inputRole = document.getElementById("role").value;
+            document.getElementById("rl").innerText = inputRole;
+
+            const inputAvailabelity = document.getElementById("availabelity").value;
+            document.getElementById("a").innerText = inputAvailabelity;
+
+            const inputUsia = document.getElementById("usia").value;
+            document.getElementById("u").innerText = inputUsia;
+            
+            const inputLokasi = document.getElementById("lokasi").value;
+            document.getElementById("l").innerText = inputLokasi;
+
+            const inputPengalaman= document.getElementById("pengalaman").value;
+            document.getElementById("p").innerText = inputPengalaman;
+
+            const inputEmail = document.getElementById("email").value;
+            document.getElementById("e").innerText = inputEmail;
+        }
+    </script>
+</body>
+</html> 
